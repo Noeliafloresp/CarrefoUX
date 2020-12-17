@@ -89,10 +89,10 @@ export default ({ posts = [], preview }) => {
               
               <div class="asset-wrapper" style="padding-top: 50%; position: relative;">
                 
-              //   {(!post.preview || post.preview.length === 0) &&
-              // 'No preview available'}
-             //  {(post.preview || []).map((block, idx) =>
-             //  Block(block, true, `${post.Slug}${idx}`)
+               {(!post.preview || post.preview.length === 0) &&
+               'No preview available'}
+               {(post.preview || []).map((block, idx) =>
+               img(block, true, `${post.Slug}${idx}`)
                 
               </div>
              
