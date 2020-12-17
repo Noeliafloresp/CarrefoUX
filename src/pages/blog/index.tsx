@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Header from '../../components/header'
-// import React from 'react'
+import React, { CSSProperties, useEffect } from 'react'
 // import components from '../../components/dynamic'
 
 import blogStyles from '../../styles/blog.module.css'
