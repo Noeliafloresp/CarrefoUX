@@ -92,17 +92,9 @@ export default ({ posts = [], preview }) => {
               <p>
                 {(!post.preview || post.preview.length === 0) &&
                   'No preview available'}
-                 {(post.preview || []).map((block, idx) => {
-                    const { type, properties, id } = block
-                    switch (type) {
-                      case 'text':
-                        textBlock(block, true, `${post.Slug}${idx}`)
-                      break
-                      case 'image':
-                        <div className="imageeeeeee"></div>
-                      break
-                    }
-                })}
+                {(post.preview || []).map((block, idx) =>
+                  textBlock(block, true, `${post.Slug}${idx}`)
+                )}
               </p>
             </div>
           )
