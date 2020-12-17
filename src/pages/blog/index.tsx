@@ -92,7 +92,7 @@ export default ({ posts = [], preview }) => {
               <p>
                 {(!post.preview || post.preview.length === 0) &&
                   'No preview available'}
-                  for (let i = 0; i < post.preview.blocks.length; i++) {
+                { for (let i = 0; i < post.preview.blocks.length; i++) {
                     const { value } = post.preview.blocks[i]
                     const { type, properties } = value
                     switch (type) {
@@ -181,6 +181,7 @@ export default ({ posts = [], preview }) => {
                             child
                           )
                         )
+                      }
                     }
               </p>
             </div>
