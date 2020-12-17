@@ -91,7 +91,7 @@ export default ({ posts = [], preview }) => {
                  {(!post.preview || post.preview.length === 0) &&
                'No preview available'}
                {(post.preview || []).map((block, idx) =>
-                textBlock(block, true, `${post.Slug}${idx}`)
+               Block(block, true, `${post.Slug}${idx}`)
                 
               </div>
              
