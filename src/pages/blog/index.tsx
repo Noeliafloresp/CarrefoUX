@@ -86,24 +86,10 @@ export default ({ posts = [], preview }) => {
               {post.Date && (
                 <div className="posted">Posted: {getDateStr(post.Date)}</div>
               )}
-              
-              <div class="asset-wrapper" style="padding-top: 50%; position: relative;">
-                
-               {(!post.preview || post.preview.length === 0) &&
-               'No preview available'}
-               {(post.preview || []).map((block, idx) =>
-               img(block, true, `${post.Slug}${idx}`)
-                
-              </div>
-             
-              
-             // <p>
-                //  {(!post.preview || post.preview.length === 0) &&
-                //  'No preview available'}
-                // {(post.preview || []).map((block, idx) =>
-               // textBlock(block, true, `${post.Slug}${idx}`)
-               //  )}
-              // </p>
+                    
+              <p>
+                 {post.preview}
+              </p>
             </div>
           )
         })}
