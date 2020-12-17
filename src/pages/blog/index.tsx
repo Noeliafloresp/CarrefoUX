@@ -97,7 +97,7 @@ export default ({ posts = [], preview }) => {
                     const { type, properties } = value
                     switch (type) {
                       case 'text':
-                        textBlock(post.preview.blocks[i], true, `${post.Slug}${i}`)
+                        textBlock(block, true, `${post.Slug}${i}`)
                       break
                       case 'image':
                       case 'video':
