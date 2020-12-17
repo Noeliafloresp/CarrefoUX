@@ -178,11 +178,11 @@ export default ({ posts = [], preview }) => {
                               {child}
                             </div>
                           ) : (
-                            child
+                           child
                           )
-                        )
                       }
-                    )}
+                    }
+                })}
               </p>
             </div>
           )
