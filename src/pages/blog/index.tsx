@@ -100,7 +100,7 @@ export default ({ posts = [], preview }) => {
                         textBlock(block, true, `${post.Slug}${idx}`)
                       break
                       case 'image':
-                        <div class="imageeeeeee"></div>
+                        <div className="imageeeeeee"></div>
                       break
                     }
                 })}
