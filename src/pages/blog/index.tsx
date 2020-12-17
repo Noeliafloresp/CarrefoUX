@@ -94,7 +94,7 @@ export default ({ posts = [], preview }) => {
                   'No preview available'}
                  {(post.preview || []).map((block, idx) => {
                     const { value } = block
-                    const { type, properties } = value
+                    const { type, properties, id } = value
                     switch (type) {
                       case 'text':
                         textBlock(block, true, `${post.Slug}${idx}`)
