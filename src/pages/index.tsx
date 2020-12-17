@@ -10,7 +10,7 @@ export default () => (
     <Header titlePre="Home" />
     <div className={sharedStyles.layout}>
       <img
-        src="https://www.carrefour.es/dist/rendering/home-front/imagotipo_color_cms.svg?e1f00957ccb57e68f67e134c5a97fccc"
+        src="/carrefour.svg"
         height="85"
         width="250"
         alt="CarrefoUX"
